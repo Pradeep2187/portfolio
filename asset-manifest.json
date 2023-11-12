@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/my-portfolio-react/static/css/main.d67c5c7e.css",
+    "main.js": "/my-portfolio-react/static/js/main.a82edd7a.js",
+    "static/media/nvspradeep.jpeg": "/my-portfolio-react/static/media/nvspradeep.2ec1572f647ba5e78810.jpeg",
+    "index.html": "/my-portfolio-react/index.html",
+    "main.d67c5c7e.css.map": "/my-portfolio-react/static/css/main.d67c5c7e.css.map",
+    "main.a82edd7a.js.map": "/my-portfolio-react/static/js/main.a82edd7a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d67c5c7e.css",
+    "static/js/main.a82edd7a.js"
+  ]
+}
