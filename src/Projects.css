@@ -1,0 +1,67 @@
+/* src/components/Projects.css */
+
+.projects-container {
+    text-align: center;
+  }
+  
+  .project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+  }
+  
+  .project:hover {
+    transform: scale(1.05);
+  }
+  
+  .project h3 {
+    color: #4e54c8; /* Use the specified color for the title */
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    color: #555;
+    margin: 0 0 10px;
+    line-height: 1.4;
+  }
+  
+  .project p:last-child {
+    font-style: italic;
+    color: #888;
+  }
+  
+  .projects-title {
+    border-bottom: 2px solid #4e54c8; /* Use the specified color for the title border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 2em;
+  }
+  
+/* footer */
+
+#social_icon_footer {
+    background-color: #dedede;
+    text-align: center;
+  }
+  
+  #social_icon_footer .social {
+    color: #195cc8;
+    font-size: 30px;
+    padding: 1rem;
+  }
+  
+  #social_icon_footer .social:hover {
+    transform: scale(1.2);
+  }
+  
+  .footertext {
+    font-size: 15px;
+    color: #444;
+    font-weight: bold;
+  }
+  

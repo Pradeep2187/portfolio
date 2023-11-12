@@ -1,0 +1,111 @@
+/* About.css */
+
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 150px 0px;
+    background-color: #e8e9e3;
+  }
+
+  
+  .about img {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 200px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #6674e5; /* Add a border with the specified color */
+    box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
+  }
+  .about-text {
+    width: 550px;
+    margin-right: 400px; /* Adjust left margin as needed */
+  }
+  
+  .main {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .about-text h2 {
+    font-size: 50px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #195cc8;
+    font-family: 'Fraunces', serif;
+  }
+
+.about-text h5 {
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: #f30a0a; /* Dark font color */
+    font-family: 'Frances', serif;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #6674e5;
+    animation: typing 1s steps(28) 1s forwards;
+    font-style: italic;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  .about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+  
+  .download-button {
+    background-color: #195cc8; /* Set the background color */
+    color: #fff; /* Set the text color */
+    padding: 10px 15px; /* Add padding */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Add a background color transition */
+  }
+  
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #195cc8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #0e3a8e;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  

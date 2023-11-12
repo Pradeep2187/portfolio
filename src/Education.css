@@ -1,0 +1,141 @@
+/* Education.css */
+.Edu-section {
+    background-color: rgb(215, 142, 58); /* Set the background color for the Education section */
+    padding: 40px 20px; 
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+
+}
+
+.Edu-page {
+    max-width: 800px;
+    height: 100vh;
+    margin: 120px auto 0;
+    margin-bottom: 80px;
+    padding: 0 2em;
+    color: #650e0e;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+.Edu-secondaryHeading {
+    position: relative;
+    margin: 1em 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: #195cc8;
+    font-family: 'Fraunces', serif;
+}
+
+.Edu-secondaryHeading::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+    margin-top: 10px;
+}
+
+.Edu-grid {
+    display: table;
+}
+
+.Edu-grid-column {
+    display: table-cell;
+}
+
+.Edu-timeline {
+    position: relative;
+    margin: 0 0 0 0.5em;
+    padding-left: 1.5em;
+    border-left: solid 1px #4a38d5;
+}
+
+.Edu-timeline:first-of-type {
+    margin-top: 1em;
+}
+
+.Edu-timeline:last-of-type {
+    border-left-color: transparent;
+}
+
+.Edu-timeline:before {
+    content: '';
+    position: absolute;
+    top: -1em;
+    left: -0.5em;
+    display: block;
+    width: 1em;
+    height: 1em;
+    border: solid 1px #6674e5;
+    background-color: #4e54c8;
+    border-radius: 50%;
+}
+
+.Edu-timeline-heading {
+    margin: 0;
+    padding-bottom: 0.5em;
+    line-height: 1em;
+    font-weight: normal;
+    transform: translateY(-0.1em);
+    text-align: center;
+}
+
+.Edu-timeline-heading-title {
+    line-height: 1.5;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgb(67, 9, 239);
+    margin-left: 150px;
+}
+
+.Edu-timeline-heading-location {
+    font-size: 1em;
+    background: none;
+    color: #650e0e;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+.Edu-timeline-heading-duration {
+    display: block;
+    font-size: 1em;
+    background: none;
+    margin-left: 150px;
+    -webkit-text-fill-color: #ec0d0d;
+    -webkit-background-clip: text;
+}
+
+.Edu-timeline-details {
+    display: block;
+    color: #0c0101;
+    margin: 0;
+    padding-bottom: 2em;
+    padding: 0 0 1em 1em;
+    list-style-type: disc;
+    font-size: 15px;
+}
+
+
+
+
+.Edu-timeline ul li {
+    color: black;
+    margin-left: 100px;
+    text-align: justify;
+}
+
+.Edu-timeline-details-item-gpa {
+   color: blueviolet;
+   margin-left: 150px;
+}
+
+.Edu-timeline-details-item {
+    margin-left: 150px;
+}
