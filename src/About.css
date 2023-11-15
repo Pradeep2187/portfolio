@@ -1,0 +1,164 @@
+/* About.css */
+
+.about {
+  width: 100%;
+  height: 100vh;
+  padding: 150px 0px;
+  background-color: #e8e9e3;
+}
+
+.about img {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 200px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #6674e5;
+  box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
+}
+
+.about-text {
+  width: 550px;
+  margin-right: 400px;
+}
+
+.main {
+  width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.about-text h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #195cc8;
+  font-family: 'Fraunces', serif;
+}
+
+.about-text h5 {
+  letter-spacing: 2px;
+  font-size: 22px;
+  margin-bottom: 25px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: #f30a0a;
+  font-family: 'Frances', serif;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #6674e5;
+  animation: typing 1s steps(28) 1s forwards;
+  font-style: italic;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.about-text p {
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  padding: 0px;
+  margin-bottom: 40px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-style:italic; 
+}
+
+.download-button {
+  background-color: #195cc8;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #195cc8;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #0e3a8e;
+  }
+}
+
+.download-button .fa-download {
+  margin-right: 10px;
+}
+
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 768px) {
+  .about img {
+    display: block;
+    margin: 5px 150px 5px;
+  }
+
+  .about-text {
+    width: 100%;
+    margin-right: 0;
+    text-align: left;
+    padding-left: 40px;
+  }
+
+  .main {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+
+  .about-text h2 {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+  }
+
+  .about-text h5 {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 15px; 
+    font-weight: bold;
+    overflow: hidden;
+    border-right: 2px solid #6674e5;
+    animation: typing 1s steps(28) 1s forwards;
+  }
+
+  .about-text p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    text-align: justify;
+    overflow: visible;
+    white-space: normal;
+    word-wrap: none;
+  }
+
+  .download-button {
+    margin-top: 20px;
+
+    text-align: left;
+  }
+}
