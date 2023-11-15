@@ -1,6 +1,6 @@
 /* Experience.css */
 .experience-section {
-    background-color: rgb(248, 241, 231); /* Set the background color for the Experience section */
+    background-color: rgb(248, 244, 238); 
   }
   
   .CV-page {
@@ -62,11 +62,11 @@
   .CV-timeline:before {
     content: '';
     position: absolute;
-    top: -1em; /* Adjusted top to move the line up */
+    top: -1em; 
     left: -0.5em;
     display: block;
     width: 1em;
-    height: 1em; /* Adjusted height to make the vertical line longer */
+    height: 1em;
     border: solid 1px #6674e5;
     background-color: #4e54c8;
     border-radius: 50%;
@@ -78,6 +78,8 @@
     line-height: 1em;
     font-weight: normal;
     transform: translateY(-0.1em);
+    text-align: left;
+    margin-left: 50px;
   }
 
   .CV-timeline-heading-position {
@@ -117,5 +119,8 @@
   .CV-timeline-details-item,
   .CV-job-timeline-item {
     margin-bottom: 0.3em;
+    text-align: justify;
+    margin-left: 70px;
+    
   }
   

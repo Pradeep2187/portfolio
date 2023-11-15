@@ -1,0 +1,80 @@
+/* Contact.css */
+
+.contact-section {
+    background-color: rgba(213, 235, 172, 0.157); 
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(243, 220, 220, 0.1);
+    transition: background 0.3s ease;
+  }
+  
+  .contact-section h2 {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 2em; 
+    margin-bottom: 40px;
+    color: #195cc8; 
+  }
+  
+  form {
+    margin-top: 20px;
+  }
+  
+  input,
+  textarea {
+    width: 60%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 8px;
+    background-color: #fff; 
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #337ab7; 
+  }
+  
+  .error-message {
+    color: #d9534f; 
+    margin-bottom: 16px;
+  }
+  
+  button {
+    background-color: #4e54c8; 
+    color: #fff; 
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #6674e5;
+  } 
+  
+  .social-icons {
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #4e54c8; 
+    transition: color 0.3s ease;
+  }
+
+  .social-icons a:hover {
+    color: #ffcc00; 
+  }
+  
+  footer {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff; 
+    background-color: #6674e5;
+  }
+  

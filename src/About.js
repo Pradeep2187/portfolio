@@ -1,6 +1,8 @@
 // About.js
 import React from 'react';
 import './About.css'; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import profileImage from './nvspradeep.jpeg'; 
 
 
@@ -10,7 +12,7 @@ const About = () => {
     const resumePath = 'https://drive.google.com/file/d/1petiUSmUc06vOM9YFgI5RrUovNQhN_CT/view?usp=drive_link';
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'PortfolioResume.pdf'; // Set the desired file name
+    link.download = 'PortfolioResume.pdf'; 
     link.click();
   };
 
@@ -22,10 +24,20 @@ const About = () => {
           <h2>Venkata Sai Pradeep Nagisetti</h2>
           <h5>Software Developer and Web Developer</h5>
           <p>
-            Motivated and detail-oriented graduate student actively pursuing a Master's degree in Software Engineering with a solid foundation in computer science. Aspiring to contribute my skills and knowledge as a Software Engineer or Software Developer to drive transformative solutions in the industry.
+            I am a Software Engineering graduate student at <b><strong><em>ASU</em></strong></b>.
+          </p>
+          <p>
+            I have experience in <u>Object-Oriented</u>
+            <br></br>
+            <u>programming, Web Development,</u>
+            <br></br>
+            <u>Cloud-based microservices, API Development.</u>
+          </p>
+          <p><b>
+            AWS Certified Solutions Architect - Associate </b>
           </p>
           <button className="download-button" onClick={downloadResume}>
-            Download Resume
+          <FontAwesomeIcon icon={faDownload} /> Download Resume
           </button>
         </div>
       </div>

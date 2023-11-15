@@ -1,7 +1,7 @@
 /* Skills.css */
 
 .skills-container {
-    background: linear-gradient(to bottom right, #f0f0f0, #dee3e6); /* Soft gradient background */
+    background: linear-gradient(to bottom right, #f0f0f0, #dee3e6); 
     padding: 40px 20px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@
   .skill-category .progress-bar {
     width: 300px;
     height: 10px;
-    background: #dddddd; /* Light gray background for the progress bar */
+    background: #dddddd; 
     border-radius: 5px;
     margin: 3px auto;
     position: relative;

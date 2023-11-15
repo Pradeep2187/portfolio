@@ -3,7 +3,6 @@
   text-align: center;
 }
 
-/* Navbar.css */
 nav {
   display: inline-block;
 }
@@ -28,4 +27,22 @@ nav a {
 
 nav a:hover {
   color: #007bff;
+}
+
+/* Media Query for Responsive Design */
+@media only screen and (max-width: 600px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 10px 0;
+  }
 }

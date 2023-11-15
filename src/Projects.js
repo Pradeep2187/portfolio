@@ -1,39 +1,74 @@
-// src/components/Projects.js
+// Projects.js
 import React from 'react';
 import './Projects.css';
-
-const Project = ({ title, description, technologies }) => (
-  <div className='project'>
-    <h3>{title}</h3>
-    <p>{description}</p>
-    <p>Technologies: {technologies.join(', ')}</p>
-  </div>
-);
+import project1 from './Project1.png';
+import project2 from './Project2.png';
+import project3 from './Project3.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Projects = () => {
-  const projects = [
-    {
-      title: 'Food Catalog RESTful API',
-      description: 'Developed RESTful APIs in Java and Spring Boot, attaining a 20% increase in efficiency for retrieving, creating, updating, and deleting customer information, streamlining customer data management.',
-      technologies: ['SpringBoot', 'RESTful API', 'Java', 'Maven',' JUnit', 'MySQL',' Git', 'Github'],
-    },
-    {
-      title: 'Serverless Menu Item CRUD Service with AWS Lambda',
-      description: 'Maintained a high standard of code quality, resulting in a 100% accuracy rate for data insertion and updates in Dynamo DB.',
-      technologies: ['Python', 'AWS Lambda', 'DynamoDB', 'API Gateway','Git'],
-    },
-    // Add more projects as needed
-  ];
-
   return (
-    <div className='projects-container'>
-      <h2 className='projects-title'>Projects</h2>
-      {projects.map((project, index) => (
-        <Project key={index} {...project} />
-      ))}
-    
+    <div className="projects-section">
+      <h2 className='projects-section-heading'>Projects</h2>
 
-    <p class="footertext">© @nvspradeep</p>
+      <div className="project-gallery">
+        <div className="project">
+          <img src={project1} alt="Project 1" />
+          <div className="project-details">
+            <h3>Project 1: Food Catalog RESTful API</h3>
+            <p>
+            Developed RESTful APIs using Java and Spring Boot.
+            Performed CRUD operations retrieving, creating, updating, and deleting customer information, streamlining customer data management using Spring Data JPA by connecting MySQL.
+            </p>
+            <a
+              href="https://github.com/Pradeep2187/Food-Catalog-RESTful-API"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             <FontAwesomeIcon icon={faGithub} /> Code
+            </a>
+          </div>
+        </div>
+
+        <div className="project">
+          <img src={project2} alt="Project 2" />
+          <div className="project-details">
+            <h3>Project 2: Serverless Menu Item CRUD Service with AWS Lambda</h3>
+            <p>
+              Created a CRUD application to handle HTTP requests using AWS API Gateway,  
+              Utilizes Lambda function to provide RESTful API for performing CRUD operations on DynamoDB.
+      
+            </p>
+            <a
+              href="https://github.com/Pradeep2187/Serverless-Menu-Item-CRUD-Service-with-AWS-Lambda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             <FontAwesomeIcon icon={faGithub} /> Code
+            </a>
+          </div>
+        </div>
+
+        <div className="project">
+          <img src={project3} alt="Project 3" />
+          <div className="project-details">
+            <h3>Project 3: Portfolio Website</h3>
+            <p>
+              Designed and developed a personal portfolio website using React, HTML, and CSS.
+              Implemented smooth navigation and showcased various projects.
+            </p>
+            <a
+              href="https://github.com/Pradeep2187/portfolio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             <FontAwesomeIcon icon={faGithub} /> Code
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

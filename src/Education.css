@@ -1,6 +1,6 @@
 /* Education.css */
 .Edu-section {
-    background-color: rgb(215, 142, 58); /* Set the background color for the Education section */
+    background-color: rgb(215, 142, 58); 
     padding: 40px 20px; 
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -91,7 +91,8 @@
     font-style: italic;
     text-transform: uppercase;
     color: rgb(67, 9, 239);
-    margin-left: 150px;
+    margin-left: 100px;
+    text-align: left;
 }
 
 .Edu-timeline-heading-location {
@@ -100,14 +101,24 @@
     color: #650e0e;
     font-family: 'Fraunces', sans-serif;
     font-weight: bold;
-    margin-left: 150px;
+    margin-left: 100px;
+    text-align: left;
 }
-
+.Edu-timeline-heading-branch {
+    font-size: 1em;
+    background: none;
+    color: #650e0e;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+    margin-left: 100px;
+    text-align: left;
+}
 .Edu-timeline-heading-duration {
     display: block;
     font-size: 1em;
     background: none;
-    margin-left: 150px;
+    margin-left: 100px;
+    text-align: left;
     -webkit-text-fill-color: #ec0d0d;
     -webkit-background-clip: text;
 }
@@ -133,9 +144,45 @@
 
 .Edu-timeline-details-item-gpa {
    color: blueviolet;
-   margin-left: 150px;
+   margin-left: 100px;
+   text-align: left;
 }
 
 .Edu-timeline-details-item {
-    margin-left: 150px;
+    margin-left: 100px;
+    text-align: left;
+}
+@media only screen and (max-width: 768px) {
+    .Edu-page {
+        padding: 0 1em; 
+    }
+
+    .Edu-secondaryHeading {
+        font-size: 30px; 
+    }
+
+    .Edu-secondaryHeading::after {
+        width: 120px; 
+    }
+
+    .Edu-timeline-heading-title,
+    .Edu-timeline-heading-location,
+    .Edu-timeline-heading-branch,
+    .Edu-timeline-heading-duration,
+    .Edu-timeline-details,
+    .Edu-timeline ul li,
+    .Edu-timeline-details-item,
+    .Edu-timeline-details-item-gpa {
+        margin-left: 0; 
+    }
+
+    .Edu-timeline-heading-duration {
+        margin-top: 0.5em; 
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .Edu-section {
+        margin-bottom: 100px; 
+    }
 }
