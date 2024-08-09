@@ -1,6 +1,6 @@
 // Education.js
 import React from 'react';
-import './Education.css'; 
+import './Education.css'; // Import your unique CSS file
 
 const Education = () => {
   return (
@@ -14,10 +14,9 @@ const Education = () => {
           <div className="Edu-timeline-heading">
             <h3 className="Edu-timeline-heading-title">Master of Science</h3>
             <h3 className="Edu-timeline-heading-location">ARIZONA STATE UNIVERSITY, TEMPE</h3>
-            <h3 className='Edu-timeline-heading-branch'>Software Engineering</h3>
             <h3 className="Edu-timeline-heading-duration">August 2022 - May 2024</h3>
-            <h4 className="Edu-timeline-details-item-gpa">GPA: 3.93/4.00</h4>
           </div>
+            <h4 className="Edu-timeline-details-item-gpa">GPA: 3.93/4.00</h4>
             <h4 className='Edu-timeline-details-item'>Related CourseWork</h4>
             <ul>
               <li>SER501: Advanced Data Structures and Algorithms</li>
@@ -35,11 +34,9 @@ const Education = () => {
           <div className="Edu-timeline-heading">
             <h3 className="Edu-timeline-heading-title">Bachelor of Technology</h3>
             <h3 className="Edu-timeline-heading-location">RAGHU ENGINEERING COLLEGE, VISAKHAPATNAM</h3>
-            <h3 className='Edu-timeline-heading-branch'>Electronics and Communication Engineering</h3>
             <h3 className="Edu-timeline-heading-duration">August 2018 - June 2022</h3>
-            <h4 className="Edu-timeline-details-item-gpa">GPA: 9.36/10.00</h4>
           </div>
-
+            <h4 className="Edu-timeline-details-item-gpa">GPA: 9.36/10.00</h4>
         </div>
 
       </div>

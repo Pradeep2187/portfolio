@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 
 
+
 import './App.css'; 
 import About from './About';
 import Skills from './Skills';
@@ -14,8 +15,9 @@ import Projects from './Projects';
 import Education from './Education';
 import Experience from './Experience';
 import Navbar from './Navbar';
-import Contact
- from './Contact';
+import Contact from './Contact';
+
+
 const App = () => {
   return (
     <Router>
@@ -27,20 +29,20 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
 
         <div id="about">
           <About />
         </div>
 
-        <div id="skills">
+        {/*<div id="skills">
           <Skills />
         </div>
 
         <div id="education">
           <Education />
-        </div>
+        </div>*/}
 
         <div id="experience">
           <Experience />

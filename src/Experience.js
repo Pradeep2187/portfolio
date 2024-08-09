@@ -1,56 +1,78 @@
 // Experience.js
-import React from 'react';
+import React, { useState } from 'react';
 import './Experience.css';
 
-const Experience = () => {
-  return (
-   <div className='experience-section'>
-    <div className="CV-page">
-      <div className="CV-grid">
-        <div className="CV-grid-column">
-          <h1 className="CV-secondaryHeading">Experience</h1>
-          <div className="CV-timeline">
-            <div className="CV-timeline-heading">
-              <h2 className='CV-timeline-heading-position'>AWS Virtual Intern</h2>
-              <h3 className="CV-timeline-heading-title">EduSkills, India</h3>
-              <h3 className="CV-timeline-heading-duration">March 2022 - May 2022</h3>
-            </div>
-            <ul className="CV-timeline-details">
-              <li className="CV-timeline-details-item">
-                Architected a highly efficient Amazon Virtual Private Cloud (VPC) with modified subnets and security groups, achieving a 99% uptime for critical web applications.
-              </li>
-              <li className="CV-timeline-details-item">
-                Implemented an Application Load Balancer (ALB) for seamless traffic distribution, reducing latency by 20% and enhancing user experience, while combining with Amazon RDS for efficient data storage and retrieval.
-              </li>
-              <li className="CV-timeline-details-item">
-                Increased development team productivity by 40% by setting up AWS Cloud9 as an integrated development environment (IDE) and utilizing AWS Systems Manager for efficient server management.
-              </li>
-            </ul>
-          </div>
+const experiences = [
+  {
+      company: 'EPICS ASU',
+      title: 'Data Analyst',
+      years: 'August 2024 - Present',
+      description: 'Managed the end-to-end dashboard creation process, from data loading and cleaning to visualization and final layout design, ensuring the dashboard was both functional and aesthetically appealing, resulting in a 35% increase in stakeholder satisfaction. Optimized data preparation and transformation processes, ensuring accurate and efficient data representation by utilizing Power BI’s data modeling capabilities, which led to a 20% reduction in report generation time.'
+  },
+  {
+      company: 'Cognizant',
+      title: 'Programmer Analyst Intern',
+      years: 'Feb 2022 - July 2022',
+      description: 'Developed interactive financial reports and dashboards using Power BI, integrating SQL queries to extract and visualize key banking metrics, which improved data-driven decision-making by 35% across management teams.Utilized DAX in Power BI to perform complex data transformations and calculations, enabling the creation of customized metrics and KPIs, which led to a 40% increase in report accuracy and insights.Designed and implemented dynamic data dashboards using advanced data visualization techniques, leading to a 30% boost in user engagement and a 50% reduction in decision-making time.Harnessed GitHub and JIRA for data workflow management, ensuring seamless collaboration, accurate version control, and timely project completion through Agile methodologies, enhancing sprint productivity by 20%.'
+  },
+  {
+      company: 'EduSkills',
+      title: 'AWS Cloud Intern',
+      years: 'March 2022 - May 2022',
+      description: 'Architected a PHP application on an Amazon EC2 instance, delivering high availability and sustaining less than 1% downtime over a six-month period. Managed a MySQL database on Amazon RDS, efficiently handling over 1 million transactions monthly while maintaining an impeccable 99.99% data accuracy rate. Led Agile-driven development sprints, ensuring timely delivery and continuous integration of features, which resulted in a 30% improvement in team efficiency and accelerated deployment cycles.'
+  }
+];
 
-          <div className="CV-timeline">
-            <div className="CV-timeline-heading">
-              <h2 className='CV-timeline-heading-position'>Programmer Analyst Trainee</h2>
-              <h3 className="CV-timeline-heading-title">Cognizant Technological Solutions, India</h3>
-              <h3 className="CV-timeline-heading-duration">October 2021 - March 2022</h3>
-            </div>
-            <ul className="CV-timeline-details">
-              <li className="CV-timeline-details-item">
-                Increased service scalability by developing RESTful APIs for micro-services, resulting in a 30% increase in system efficiency and improved accessibility for end-users.
-              </li>
-              <li className="CV-timeline-details-item">
-                Demonstrated proficiency in database design and implementation with SQL Server, modifying data retrieval and storage processes for 25% faster query response times.
-              </li>
-              <li className="CV-timeline-details-item">
-                Leveraged Java Maven, Postman, and GitHub to streamline development workflows, fostering a 15% improvement in project collaboration and code version control.
-              </li>
-            </ul>
+const Experience = () => {
+  const [selectedCompany, setSelectedCompany] = useState(0);
+
+  return (
+      <div className='experience'>
+          <div className="header">
+              <h1>Where I've Worked</h1>
+              <div className="horizontal-line"></div>
           </div>
-        </div>
+          <div className="timeline-container">
+              <div className="experience-list">
+                  {experiences.map((exp, index) => (
+                      <div
+                          key={index}
+                          className={`experience-item ${selectedCompany === index ? 'active' : ''}`}
+                          onClick={() => setSelectedCompany(index)}
+                      >
+                          <div className="company-name">
+                              {selectedCompany === index && <div className="vertical-line-company"></div>}
+                              {exp.company}
+                          </div>
+                      </div>
+                  ))}
+                  {selectedCompany !== null && (
+                      <div className="experience-details">
+                          <h6 className='exp-detail-title'> {experiences[selectedCompany].title}</h6>
+                          <h5 className='exp-detail-years'> {experiences[selectedCompany].years}</h5>
+                          <p>{experiences[selectedCompany].description}</p>
+                      </div>
+                  )}
+              </div>
+          </div>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
+          <br></br>
       </div>
-    </div>
-    </div>
   );
 };
+
 
 export default Experience;
