@@ -47,8 +47,11 @@ Optimized heart disease prediction by leveraging a suite of machine learning alg
         </p>
         <p>Technology Used: Microsoft Excel, Power BI, SQL, Powerpoint</p>
         <a className="external-2" href="https://medium.com/@nvspradeep5/transforming-decision-making-with-power-bi-a-journey-to-a-25-improvement-in-stakeholder-a383f35a4f9b" target="_blank" rel="noopener noreferrer" style={{ color: '#fff', marginLeft: '10px' }}>
-  <FontAwesomeIcon icon={faExternalLinkAlt} size="1x" />
-</a>
+      <FontAwesomeIcon icon={faExternalLinkAlt} size="1x" />
+      </a>
+        <a className="external-2" href="https://github.com/VenkataSaiPradeep/Adventure-Works-Sales" target="_blank" rel="noopener noreferrer">
+          <FaGithub size={20} className="icon" />
+        </a>
        </div>
        <div className="image-half-2">
         <img src={p2} alt="Sales Dashboard"/>

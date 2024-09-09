@@ -1,103 +1,142 @@
 /* About.css */
 
 .about {
-    width: 100%;
-    height: 100vh;
-    text-align: left;
-    padding: 150px 0px;
-    background-color: rgb(10, 25, 47);
-    color:rgb(136, 146, 176);
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  }
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 50px 20px;
+  text-align: justify;
+  margin-left: 100px;
+  background-color: rgb(10, 25, 47);
+  color: rgb(136, 146, 176);
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+}
 
-  
-  .about img {
-    float: right;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    border: 3px solid #64FFDA; 
-    box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
-  }
-  .about-text {
-    width: 550px;
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  }
-  
+.main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  width: 100%;
+  padding-left: 50px; /* Ensures consistent left alignment for text */
+}
+
+.about-text {
+  font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  max-width: 700px; /* Limits the width of the text, especially for the p tag */
+}
+
+.about img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 3px solid #64FFDA;
+  box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+
+.about-text h6,
+.about-text h2,
+.about-text h5,
+.about-text p {
+  margin-left: 0;
+  text-align: left;
+  padding-left: 50px; /* Align text elements uniformly */
+}
+
+.about-text h6 {
+  color: #64FFDA;
+  font-size: 16px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  color: rgb(204, 214, 246);
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.about-text h5 {
+  color: rgb(175, 180, 198);
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  max-width: 100%; /* Prevents the p tag from expanding too far */
+}
+
+.cert {
+  color: #fff;
+  margin-top: 50px;
+  padding: 0px; /* Align h4 (certificates) with the rest of the text */
+}
+
+.cert h4 {
+  margin: 0;
+  margin-left: 100px; /* Ensures consistent left alignment for h4 tags */
+  padding: 0px; /* Align with other text elements */
+  text-align: left;
+}
+
+.cert a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #64FFDA;
+  background-color: rgb(10, 25, 47);
+  border: 2px solid #64FFDA;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.download-button:hover {
+  background-color: rgb(23, 50, 44);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
   .main {
-    width: 1130px;
-    margin: 0 auto;
-    display: flex;
-    align-items: left;
-    justify-content: space-around;
-  }
-  
-  .about-text h6 {
-    color: #64FFDA;
-    font-size: 16px;
-    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-    font-weight: normal;
-  }
-  
-  .about-text h2 {
-    color:rgb(204, 214, 246);
-    display: flex;
-    font-size: 35px;
-    text-align: left;
-    align-items: left;
-  }
-  .about-text h5 {
-    color: rgb(136, 146, 176);
-    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-    font-size: 20px;
-  }
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  
-  .about-text p {
-    letter-spacing: 1px;
-    line-height: 28px;
-    font-size: 18px;
-    margin-bottom: 45px;
+      margin-top: 100px;
+      grid-template-columns: 1fr;
+      padding-left: 0;
   }
 
-  .cert{
-    align-items: center;
-    padding-left: 250px;
-    color: #fff;
+  .about img {
+      margin: 40px auto 20px;
+      align-self: center;
   }
-  
-  .download-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: none;
-    color: #64FFDA;
-    background-color: rgb(10, 25, 47);
-    border: 2px solid #64FFDA;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
-    &:hover {
-      background-color: rgb(23, 50, 44);
-    }
+
+  .cert {
+      text-align: center;
   }
-  
-  
-  
-  
-  
-  
-  
+  .cert h4 {
+    margin-left: 10px; /* Center-aligns certificates on smaller screens */
+}
+}
