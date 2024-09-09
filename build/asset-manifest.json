@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.4bff5e54.css",
+    "main.js": "/portfolio/static/js/main.bb71c555.js",
+    "static/media/Sales example Dashboard.png": "/portfolio/static/media/Sales example Dashboard.6ff3579f9c0f4903e12b.png",
+    "static/media/Histogram medium.png": "/portfolio/static/media/Histogram medium.4fd06f8bb06c94693541.png",
+    "static/media/donut chart.png": "/portfolio/static/media/donut chart.fc8650a4c68d070d87da.png",
+    "static/media/nvspradeep.jpeg": "/portfolio/static/media/nvspradeep.2ec1572f647ba5e78810.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.4bff5e54.css.map": "/portfolio/static/css/main.4bff5e54.css.map",
+    "main.bb71c555.js.map": "/portfolio/static/js/main.bb71c555.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4bff5e54.css",
+    "static/js/main.bb71c555.js"
+  ]
+}
