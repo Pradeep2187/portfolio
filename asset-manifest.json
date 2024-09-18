@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c6a168d5.css",
-    "main.js": "/portfolio/static/js/main.8b2ef41a.js",
+    "main.css": "/portfolio/static/css/main.b6484476.css",
+    "main.js": "/portfolio/static/js/main.beda2ab7.js",
     "static/media/Sales example Dashboard.png": "/portfolio/static/media/Sales example Dashboard.6ff3579f9c0f4903e12b.png",
     "static/media/Histogram medium.png": "/portfolio/static/media/Histogram medium.4fd06f8bb06c94693541.png",
     "static/media/donut chart.png": "/portfolio/static/media/donut chart.fc8650a4c68d070d87da.png",
     "static/media/nvspradeep.jpeg": "/portfolio/static/media/nvspradeep.2ec1572f647ba5e78810.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.c6a168d5.css.map": "/portfolio/static/css/main.c6a168d5.css.map",
-    "main.8b2ef41a.js.map": "/portfolio/static/js/main.8b2ef41a.js.map"
+    "main.b6484476.css.map": "/portfolio/static/css/main.b6484476.css.map",
+    "main.beda2ab7.js.map": "/portfolio/static/js/main.beda2ab7.js.map"
   },
   "entrypoints": [
-    "static/css/main.c6a168d5.css",
-    "static/js/main.8b2ef41a.js"
+    "static/css/main.b6484476.css",
+    "static/js/main.beda2ab7.js"
   ]
 }
