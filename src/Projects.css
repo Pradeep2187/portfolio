@@ -1,0 +1,199 @@
+.project {
+  background-color: rgb(10, 25, 47);
+}
+
+.project h2 {
+  margin-bottom: 40px;
+  color: rgb(204, 214, 246);
+  display: block;
+  font-size: 35px;
+  text-align: left;
+  padding-left: 300px;
+}
+
+.projects-title {
+  margin-bottom: 40px;
+  color: rgb(204, 214, 246);
+  display: block;
+  font-size: 35px;
+  text-align: left;
+  padding-left: 300px;
+}
+
+.projects-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 150px;
+  padding-right: 100px;
+}
+
+.image-half, .image-half-2 {
+  position: relative;
+  width: 100%; 
+  max-width: 600px;
+  margin: 0; 
+  padding: 0; 
+}
+
+.image-half img, .image-half-2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.image-half::before, .image-half-2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #7febd1;
+  opacity: 0.5; 
+  transition: opacity 0.5s ease;
+}
+
+.image-half:hover::before, .image-half-2:hover::before {
+  opacity: 0;
+}
+
+.text-half, .text-half-2 {
+  padding: 10px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  font-weight: normal;
+  background-color: rgba(91, 114, 146, 0.637);
+  color: #ffffffac;
+}
+
+.text-half {
+  text-align: left;
+}
+
+.external {
+  float: right;
+}
+
+.external:hover {
+  color: #64FFDA;
+}
+
+.external-2 {
+  float: left;
+  padding-left: 10px;
+}
+
+.text-half-2 {
+  text-align: left;
+}
+
+.right-text-start {
+  color: #64FFDA;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  text-align: right;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+.right-text, .left-text {
+  color: #64FFDA;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+.right-text {
+  text-align: right;
+  padding-right: 100px;
+}
+
+.right-text-2, .left-text-2 {
+  color: #fff;
+  margin: 0;
+}
+
+.right-text-2 {
+  text-align: right;
+  padding-right: 100px;
+  padding-bottom: 10px;
+}
+
+.left-text {
+  text-align: left;
+  padding-left: 200px;
+}
+
+.left-text-2 {
+  text-align: left;
+  padding-left: 200px;
+}
+
+.horizontal-line {
+  width: 300px; /* Adjust this value to reduce the length */
+  height: 0.1px;
+  background-color: #ddddde;
+  margin-left: 30px;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 1024px) {
+  .project h2, .projects-title {
+    padding-left: 150px;
+    font-size: 30px;
+  }
+
+  .projects-container {
+    padding-left: 90px;
+    padding-right: 50px;
+  }
+
+  .right-text, .right-text-2, .left-text, .left-text-2, .right-text-start {
+    padding-left: 90px;
+    padding-right: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project h2, .projects-title {
+    padding-left: 50px;
+    font-size: 28px;
+  }
+
+  .projects-container {
+    flex-direction: column;
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+
+  .right-text, .right-text-2, .left-text, .left-text-2, .right-text-start {
+    padding-left: 80px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project h2, .projects-title {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 24px;
+  }
+
+  .projects-container {
+    padding-left: 50px;
+    padding-right: 20px;
+  }
+
+  .right-text, .right-text-2, .left-text, .left-text-2, .right-text-start {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+  }
+}

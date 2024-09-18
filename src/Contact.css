@@ -1,0 +1,27 @@
+
+.fixed-icons {
+    position: fixed;
+    bottom: 20px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical-line {
+    width: 1px;
+    height: 200px; 
+    background-color: rgb(168, 178, 209);
+    margin-bottom: 10px;
+}
+
+.icon {
+    color: rgb(168, 178, 209);
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #64FFDA;
+}
