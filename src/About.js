@@ -2,29 +2,14 @@ import React from 'react';
 import './About.css'; 
 import profileImage from './nvspradeep.jpeg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 import { faCertificate,faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   const downloadResume = () => {
-    const resumePath = 'https://docs.google.com/document/d/1b6eaORkcoqrPdLQn5h-p4PZF_RqiEArM/edit?usp=sharing&ouid=103439502716041849064&rtpof=true&sd=true';
-=======
-=======
->>>>>>> Stashed changes
-import { faCertificate } from '@fortawesome/free-solid-svg-icons';
-
-
-const About = () => {
-  const downloadResume = () => {
-    const resumePath = 'https://docs.google.com/document/d/1sRsgZhOGSN1nHvZpcWPUefoYmWG40bJS/edit';
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
+    const resumePath = 'https://drive.google.com/file/d/1BG9LGZz00WWTxm6Mho5mQXOs_oK3Ib0K/view?usp=sharing';
     const link = document.createElement('a');
     link.href = resumePath;
-    link.download = 'PortfolioResume.pdf'; // Set the desired file name
+    link.download = 'PortfolioResume.pdf'; 
     link.click();
   };
 
@@ -34,27 +19,16 @@ const About = () => {
         <div className="about-text">
           <h6>Hi, my name is</h6>
           <h2>Venkata Sai Pradeep Nagisetti.</h2>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-          <h5>Data Analyst and Software Developer</h5>
+          <h5>Full Stack Software Developer</h5>
           <p>
-            I am a Software Engineering graduate from Arizona State University based out of Tempe, AZ. My expertise lies in the field of Data Analysis, Cloud Computing, Software Development, and Salesforce.
+          Software Engineer with 1+ years of experience in full-stack development, system architecture, and performance optimization. Passionate about building scalable solutions, solving complex problems, and driving innovation. Currently a Junior Full Stack Developer at a startup Teaching Solved, refining expertise in Python, React, and cloud technologies.
           </p>
           <button className="download-button" onClick={downloadResume}>
           <FontAwesomeIcon icon={faDownload} /> &nbsp;Download Resume
-=======
-          <h5>Data Analyst  and Software Developer</h5>
-          <p>
-          I am a Software Engineering grad from ASU based out of Tempe, AZ. My expertise lies in the field of Data Analysis, Cloud Computing, Software Development and Salesforce.
-          </p>
-          <button className="download-button" onClick={downloadResume}>
-            Download Resume
->>>>>>> Stashed changes
           </button>
         </div>
         <img src={profileImage} alt="Profile" className="about-image" />
       </div>
-<<<<<<< Updated upstream
       
       <div className="cert">
         <h4>
@@ -66,28 +40,7 @@ const About = () => {
           <FontAwesomeIcon color="#64FFDA" icon={faCertificate} size="1x" />   
           <a href="https://www.credly.com/badges/b92c03db-2624-4ed1-8c48-b3edd835e9ab/linked_in_profile"> AWS Certified Solutions Architect - Associate | AWS</a>
         </h4>
-=======
-          <h5>Data Analyst  and Software Developer</h5>
-          <p>
-          I am a Software Engineering grad from ASU based out of Tempe, AZ. My expertise lies in the field of Data Analysis, Cloud Computing, Software Development and Salesforce.
-          </p>
-          <button className="download-button" onClick={downloadResume}>
-            Download Resume
-          </button>
-        </div>
-        <img src={profileImage} alt="Profile" className="about-image" />
->>>>>>> Stashed changes
       </div>
-=======
->>>>>>> Stashed changes
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      
-      <h4 className='cert'><FontAwesomeIcon color=" #64FFDA" icon={faCertificate} size="1x" />   Microsoft Power BI Data Analyst Professional Certificate | Coursera</h4>
-      <h4 className='cert'><FontAwesomeIcon color=" #64FFDA" icon={faCertificate} size="1x" />   AWS Certified Solutions Architect - Associate | AWS</h4>
     </div>
   );
 };
