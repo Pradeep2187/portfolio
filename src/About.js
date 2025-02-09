@@ -3,18 +3,24 @@ import './About.css';
 import profileImage from './nvspradeep.jpeg'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 import { faCertificate,faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   const downloadResume = () => {
     const resumePath = 'https://docs.google.com/document/d/1b6eaORkcoqrPdLQn5h-p4PZF_RqiEArM/edit?usp=sharing&ouid=103439502716041849064&rtpof=true&sd=true';
 =======
+=======
+>>>>>>> Stashed changes
 import { faCertificate } from '@fortawesome/free-solid-svg-icons';
 
 
 const About = () => {
   const downloadResume = () => {
     const resumePath = 'https://docs.google.com/document/d/1sRsgZhOGSN1nHvZpcWPUefoYmWG40bJS/edit';
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
     const link = document.createElement('a');
     link.href = resumePath;
@@ -29,16 +35,26 @@ const About = () => {
           <h6>Hi, my name is</h6>
           <h2>Venkata Sai Pradeep Nagisetti.</h2>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           <h5>Data Analyst and Software Developer</h5>
           <p>
             I am a Software Engineering graduate from Arizona State University based out of Tempe, AZ. My expertise lies in the field of Data Analysis, Cloud Computing, Software Development, and Salesforce.
           </p>
           <button className="download-button" onClick={downloadResume}>
           <FontAwesomeIcon icon={faDownload} /> &nbsp;Download Resume
+=======
+          <h5>Data Analyst  and Software Developer</h5>
+          <p>
+          I am a Software Engineering grad from ASU based out of Tempe, AZ. My expertise lies in the field of Data Analysis, Cloud Computing, Software Development and Salesforce.
+          </p>
+          <button className="download-button" onClick={downloadResume}>
+            Download Resume
+>>>>>>> Stashed changes
           </button>
         </div>
         <img src={profileImage} alt="Profile" className="about-image" />
       </div>
+<<<<<<< Updated upstream
       
       <div className="cert">
         <h4>
@@ -62,6 +78,8 @@ const About = () => {
         <img src={profileImage} alt="Profile" className="about-image" />
 >>>>>>> Stashed changes
       </div>
+=======
+>>>>>>> Stashed changes
       <br></br>
       <br></br>
       <br></br>

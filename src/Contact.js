@@ -7,7 +7,11 @@ import { FaLinkedin, FaEnvelope, FaGithub } from 'react-icons/fa';
 const Contact = () => {
     const email = () => {
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         const recipient = 'venkatanagisetti99@gmail.com';
+=======
+        const recipient = 'venkatasaipradeep2@gmail.com';
+>>>>>>> Stashed changes
 =======
         const recipient = 'venkatasaipradeep2@gmail.com';
 >>>>>>> Stashed changes
@@ -21,7 +25,11 @@ const Contact = () => {
           <h2>Get In Touch</h2>
           <p>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
           I'm currently seeking Data Analyst full-time opportunities, I'm always happy to connect and network. Feel free to connect with me via LinkedIn or just shoot me an email.
+=======
+          I'm currently looking for new opportunities, I'm always happy to connect and network. Feel free to connect with me via LinkedIn or just shoot me an email.
+>>>>>>> Stashed changes
 =======
           I'm currently looking for new opportunities, I'm always happy to connect and network. Feel free to connect with me via LinkedIn or just shoot me an email.
 >>>>>>> Stashed changes
