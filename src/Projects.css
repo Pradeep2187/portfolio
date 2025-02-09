@@ -1,19 +1,8 @@
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 .project {
   background-color: rgb(10, 25, 47);
 }
 
-.project h2 {
-  margin-bottom: 40px;
-  color: rgb(204, 214, 246);
-  display: block;
-  font-size: 35px;
-  text-align: left;
-  padding-left: 300px;
-}
-
-.projects-title {
+.project h2, .projects-title {
   margin-bottom: 40px;
   color: rgb(204, 214, 246);
   display: block;
@@ -61,8 +50,6 @@
 .image-half:hover::before, .image-half-2:hover::before {
   opacity: 0;
 }
-=======
->>>>>>> Stashed changes
 
 .text-half, .text-half-2 {
   padding: 10px;
@@ -87,115 +74,13 @@
 .external-2 {
   float: left;
   padding-left: 10px;
-=======
-
-.project {
-  background-color: rgb(10, 25, 47);
-}
-
-.project h2 {
-  margin-bottom: 40px;
-  color: rgb(204, 214, 246);
-  display: block;
-  font-size: 35px;
-  text-align: left;
-  padding-left: 300px;
-}
-
-.projects-title {
-  margin-bottom: 40px;
-  color: rgb(204, 214, 246);
-  display: block;
-  font-size: 35px;
-  text-align: left;
-  padding-left: 300px;
-}
-
-.projects-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  box-sizing: border-box;
-  padding-left: 150px;
-  padding-right: 100px;
-}
-
-.image-half, .image-half-2 {
-  position: relative;
-  width: 100%; 
-  max-width: 600px;
-  margin: 0; 
-  padding: 0; 
-}
-
-.image-half img, .image-half-2 img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.image-half::before, .image-half-2::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #7febd1;
-  opacity: 0.5; 
-  transition: opacity 0.5s ease;
-}
-
-.image-half:hover::before, .image-half-2:hover::before {
-  opacity: 0;
-}
-
-.text-half, .text-half-2 {
-  padding: 10px;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-  font-weight: normal;
-  background-color: rgba(91, 114, 146, 0.637);
-  color: #ffffffac;
-}
-
-.text-half {
-  text-align: left;
-}
-
-.external {
-  float: right;
-}
-
-.external:hover {
-  color: #64FFDA;
-}
-
-.external-2 {
-  float: left;
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
 
 .text-half-2 {
   text-align: left;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 }
 
 .right-text-start {
-=======
-
-}
-.right-text-start{
->>>>>>> Stashed changes
-=======
-
-}
-.right-text-start{
->>>>>>> Stashed changes
   color: #64FFDA;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
   font-weight: normal;
@@ -204,8 +89,6 @@
   text-align: right;
   padding-right: 100px;
   padding-bottom: 10px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 }
 
 .right-text, .left-text {
@@ -218,60 +101,21 @@
   padding-bottom: 10px;
 }
 
-=======
-}
-.right-text, .left-text {
-  color: #64FFDA;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-  font-weight: normal;
-  font-size: 14px;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 10px;
-}
-
->>>>>>> Stashed changes
-=======
-}
-.right-text, .left-text {
-  color: #64FFDA;
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
-  font-weight: normal;
-  font-size: 14px;
-  margin: 0;
-  padding-top: 100px;
-  padding-bottom: 10px;
-}
-
->>>>>>> Stashed changes
 .right-text {
   text-align: right;
   padding-right: 100px;
 }
 
 .right-text-2, .left-text-2 {
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-  /*color: rgb(205, 209, 218);*/
->>>>>>> Stashed changes
-=======
-  /*color: rgb(205, 209, 218);*/
->>>>>>> Stashed changes
   color: #fff;
   margin: 0;
+  padding-bottom: 5px;
 }
 
 .right-text-2 {
   text-align: right;
   padding-right: 100px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
   padding-bottom: 10px;
-=======
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 }
 
 .left-text {
@@ -285,12 +129,10 @@
 }
 
 .horizontal-line {
-  width: 100px; /* Adjust this value to reduce the length */
+  width: 100px;
   height: 2px;
   background-color: #007bff;
   margin-left: 30px;
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
 }
 
 /* Responsive design for smaller screens */
@@ -309,8 +151,6 @@
     padding-left: 90px;
     padding-right: 50px;
   }
-=======
->>>>>>> Stashed changes
 }
 
 @media screen and (max-width: 768px) {
@@ -348,6 +188,4 @@
     padding-right: 20px;
     font-size: 12px;
   }
-=======
->>>>>>> Stashed changes
 }
