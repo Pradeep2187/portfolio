@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 .experience {
   background-color: rgb(10, 25, 47);
   color: rgb(136, 146, 176);
@@ -148,3 +149,87 @@
     font-size: 11px;
   }
 }
+=======
+
+.experience {
+  background-color: rgb(10, 25, 47);
+  color: rgb(136, 146, 176);
+  padding-left: 300px;
+}
+.header {
+  display: flex;
+  color: rgb(204, 214, 246);
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  margin-right: 20px;
+}
+
+.horizontal-line {
+  width: 300px;
+  height: 0.5px;
+  background-color: rgb(119, 124, 139);
+}
+
+.timeline-container {
+  display: flex;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+}
+
+.experience-list {
+  margin-left: 80px;
+  width: 100%;
+  position: relative;
+}
+
+.experience-item {
+  cursor: pointer;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.experience-item .company-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.experience-details {
+  background-color: rgb(10, 25, 47);
+  padding: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: calc(100% - 200px);
+}
+
+.experience-details p {
+  margin: 0;
+}
+
+.vertical-line-company {
+  width: 2px;
+  height: 50%;
+  background-color: #7febd1;
+  position: absolute;
+  left: -10px;
+}
+.experience-details .exp-detail-title {
+  color: #7febd1;
+  font-size: 13px;
+  padding-bottom: 0%;
+  margin-bottom: 5px;
+  margin: 0;
+  padding: 0;
+}
+.exp-detail-years{
+  padding-bottom: 0;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+>>>>>>> Stashed changes

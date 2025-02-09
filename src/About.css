@@ -1,6 +1,7 @@
 /* About.css */
 
 .about {
+<<<<<<< Updated upstream
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -140,3 +141,105 @@
     margin-left: 10px; /* Center-aligns certificates on smaller screens */
 }
 }
+=======
+    width: 100%;
+    height: 100vh;
+    text-align: left;
+    padding: 150px 0px;
+    background-color: rgb(10, 25, 47);
+    color:rgb(136, 146, 176);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  }
+
+  
+  .about img {
+    float: right;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 3px solid #64FFDA; 
+    box-shadow: rgba(26, 24, 24, 0.25) 0px 5px 10px 2px;
+  }
+  .about-text {
+    width: 550px;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  }
+  
+  .main {
+    width: 1130px;
+    margin: 0 auto;
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+  }
+  
+  .about-text h6 {
+    color: #64FFDA;
+    font-size: 16px;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+    font-weight: normal;
+  }
+  
+  .about-text h2 {
+    color:rgb(204, 214, 246);
+    display: flex;
+    font-size: 35px;
+    text-align: left;
+    align-items: left;
+  }
+  .about-text h5 {
+    color: rgb(136, 146, 176);
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  
+  .about-text p {
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+  }
+
+  .cert{
+    align-items: center;
+    padding-left: 250px;
+    color: #fff;
+  }
+  
+  .download-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    text-decoration: none;
+    color: #64FFDA;
+    background-color: rgb(10, 25, 47);
+    border: 2px solid #64FFDA;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: rgb(23, 50, 44);
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+>>>>>>> Stashed changes
