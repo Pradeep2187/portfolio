@@ -90,6 +90,9 @@
   padding: 0px; /* Align with other text elements */
   text-align: left;
 }
+.cert h4 :hover {
+  color: #64FFDA;
+}
 
 .cert a {
   text-decoration: none;
@@ -117,7 +120,7 @@
 }
 
 .download-button:hover {
-  background-color: rgb(23, 50, 44);
+  background-color:#52d6b2;
 }
 
 /* Media Queries */

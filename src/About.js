@@ -6,7 +6,7 @@ import { faCertificate,faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const About = () => {
   const downloadResume = () => {
-    const resumePath = 'https://docs.google.com/document/d/1b6eaORkcoqrPdLQn5h-p4PZF_RqiEArM/edit?usp=sharing&ouid=103439502716041849064&rtpof=true&sd=true';
+    const resumePath = 'https://drive.google.com/file/d/1BG9LGZz00WWTxm6Mho5mQXOs_oK3Ib0K/view?usp=sharing';
     const link = document.createElement('a');
     link.href = resumePath;
     link.download = 'PortfolioResume.pdf'; 
@@ -19,9 +19,9 @@ const About = () => {
         <div className="about-text">
           <h6>Hi, my name is</h6>
           <h2>Venkata Sai Pradeep Nagisetti.</h2>
-          <h5>Data Analyst and Software Developer</h5>
+          <h5>Full Stack Software Developer</h5>
           <p>
-            I am a Software Engineering graduate from Arizona State University based out of Tempe, AZ. My expertise lies in the field of Data Analysis, Cloud Computing, Software Development, and Salesforce.
+          Software Engineer with 1+ years of experience in full-stack development, system architecture, and performance optimization. Passionate about building scalable solutions, solving complex problems, and driving innovation. Currently a Junior Full Stack Developer at a startup Teaching Solved, refining expertise in Python, React, and cloud technologies.
           </p>
           <button className="download-button" onClick={downloadResume}>
           <FontAwesomeIcon icon={faDownload} /> &nbsp;Download Resume

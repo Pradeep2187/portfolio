@@ -1,4 +1,118 @@
+.contact-section {
+    background-color: #0a192f;
+    color: #ccd6f6;
+    padding: 50px 20px;
+    text-align: center;
+}
 
+.contact-container {
+    max-width: 600px;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #112240;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    color: #64FFDA;
+}
+
+h3 {
+    color: #64FFDA;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+.email-button {
+    padding: 12px 18px;
+    margin-left: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    color: #64FFDA;
+    background-color: rgb(10, 25, 47);
+    border: 2px solid #64FFDA;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+    background-color: #0b684f;
+}
+
+/* Hide form initially */
+.form-container {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Show form when button is clicked */
+.form-container.show {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Form Adjustments */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    width: 100%;
+}
+
+/* Input Fields */
+input, textarea {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #64FFDA;
+    border-radius: 5px;
+    background-color: #112240;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+/* Submit Button */
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #64FFDA;
+    color: #0a192f;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #52d6b2;
+}
+
+/* Success Message */
+.success-message {
+    color: #52d6b2;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Fixed Social Icons */
 .fixed-icons {
     position: fixed;
     bottom: 20px;
@@ -10,7 +124,7 @@
 
 .vertical-line {
     width: 1px;
-    height: 200px; 
+    height: 200px;
     background-color: rgb(168, 178, 209);
     margin-bottom: 10px;
 }
@@ -24,4 +138,48 @@
 
 .icon:hover {
     color: #64FFDA;
+}
+
+/* 🔹 RESPONSIVE DESIGN 🔹 */
+@media (max-width: 768px) {
+    .contact-container {
+        max-width: 95%;
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .email-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    input, textarea {
+        font-size: 14px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .fixed-icons {
+        left: 20px;
+        bottom: 15px;
+    }
+
+    .vertical-line {
+        height: 150px;
+    }
+
+    .icon {
+        font-size: 20px;
+    }
 }

@@ -1,26 +1,30 @@
 // Experience.js
 import React, { useState } from 'react';
 import './Experience.css';
+import TSLogo from './TS-Logo.jpeg';
+import CognizantLogo from './Cognizant-logo.jpeg';
 
 const experiences = [
   {
-      company: 'ASU EPICS',
-      title: 'Data Analyst',
+      company: 'Teaching Solved',
+      logo: TSLogo,
+      title: 'Jr Full Stack Developer',
       years: 'August 2024 - Present',
-      description: 'Managed the end-to-end dashboard creation process, from data loading and cleaning to visualization and final layout design, ensuring the dashboard was both functional and aesthetically appealing, resulting in a 35% increase in stakeholder satisfaction. Optimized data preparation and transformation processes, ensuring accurate and efficient data representation by utilizing Power BI’s data modeling capabilities, which led to a 20% reduction in report generation time.'
+      description: 'Engineered a scalable EdTech platform for Teaching Solved using Next.js, Python, Flask, and PostgreSQL, which reduced page load times by 20%, boosting user engagement by 15%. Optimized PostgreSQL database performance by creating efficient schemas and indexing strategies, resulting in 15% faster data access, allowing for 25% increase in reporting speed for stakeholders.Integrated Stripe API for secure payment processing, which reduced transaction errors by 30%, improving client satisfaction, and increased payment success rates by 20%. Tech-stack: Python, TypeScript, Next.js, AWS, Flask, PostgreSQL, Figma(UI/UX), Vercel, Github, Pytest, S3, Pycharm'
   },
   {
-      company: 'Version 1',
-      title: 'Data Analyst',
-      years: 'August 2020 - July 2022',
-      description: 'Developed interactive financial reports and dashboards using Power BI, integrating SQL queries to extract and visualize key banking metrics, which improved data-driven decision-making by 35% across management teams.Utilized DAX in Power BI to perform complex data transformations and calculations, enabling the creation of customized metrics and KPIs, which led to a 40% increase in report accuracy and insights.Designed and implemented dynamic data dashboards using advanced data visualization techniques, leading to a 30% boost in user engagement and a 50% reduction in decision-making time.Harnessed GitHub and JIRA for data workflow management, ensuring seamless collaboration, accurate version control, and timely project completion through Agile methodologies, enhancing sprint productivity by 20%.'
+      company: 'Cognizant',
+      logo: CognizantLogo,
+      title: 'Programmer Analyst',
+      years: 'February 2022 - July 2022',
+      description: ' Designed and deployed a Banking Management System using Java, SpringBoot and SQL Server, reducing data inconsistencies by 25%, enhancing customer service response times by 40%. Developed interactive web components using HTML, CSS, and JavaScript, which improved page load times by 50%, ensuring a 30% boost in user satisfaction for high-traffic pages. Implemented RESTful APIs for modular and scalable service management, reducing operational latency by 25%, accelerating system scalability by 40%. Tech-stack: Java, SpringBoot, Azure, CSS3, Microsoft SQL Server, MicrosoftVisual Studio Code, Kubernetes, UAT'
   },
-  {
-    company: 'Version 1',
-    title: 'Data Analyst Intern',
-    years: 'August 2019 - July 2020',
-    description: 'Designed and developed interactive Tableau and Power BI dashboards, significantly increasing performance metric visibility by 40% and enabling more informed decision-making for stakeholders. Streamlined data pipelines to automate data processing workflows, improving overall business performance by 20% and ensuring 99% accuracy in reporting across all departments.'
-},
+  //{
+   // company: 'Version 1',
+  //  title: 'Data Analyst Intern',
+   // years: 'August 2019 - July 2020',
+    //description: 'Designed and developed interactive Tableau and Power BI dashboards, significantly increasing performance metric visibility by 40% and enabling more informed decision-making for stakeholders. Streamlined data pipelines to automate data processing workflows, improving overall business performance by 20% and ensuring 99% accuracy in reporting across all departments.'
+  //},
 ];
 
 const Experience = () => {
@@ -40,8 +44,9 @@ const Experience = () => {
                           className={`experience-item ${selectedCompany === index ? 'active' : ''}`}
                           onClick={() => setSelectedCompany(index)}
                       >
+                          <img src={exp.logo} alt={`${exp.company} Logo`} className="company-logo" />
                           <div className="company-name">
-                              {selectedCompany === index && <div className="vertical-line-company"></div>}
+                              {selectedCompany === index && <div className="vertical-line-company"></div>} 
                               {exp.company}
                           </div>
                       </div>
