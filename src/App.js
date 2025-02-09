@@ -38,11 +38,11 @@ const App = () => {
 
         {/*<div id="skills">
           <Skills />
-        </div>
+        </div> */}
 
         <div id="education">
           <Education />
-        </div>*/}
+        </div>
 
         <div id="experience">
           <Experience />
