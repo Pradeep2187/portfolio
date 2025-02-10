@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9785d4e0.css",
-    "main.js": "/portfolio/static/js/main.1abb5095.js",
+    "main.css": "/portfolio/static/css/main.c6154517.css",
+    "main.js": "/portfolio/static/js/main.8325253b.js",
     "static/media/Sales example Dashboard.png": "/portfolio/static/media/Sales example Dashboard.6ff3579f9c0f4903e12b.png",
     "static/media/ASU-logo.png": "/portfolio/static/media/ASU-logo.572100eb81117ecb434c.png",
     "static/media/Histogram medium.png": "/portfolio/static/media/Histogram medium.4fd06f8bb06c94693541.png",
+    "static/media/Jntuk-logo.png": "/portfolio/static/media/Jntuk-logo.d13330987a367b5b2456.png",
     "static/media/donut chart.png": "/portfolio/static/media/donut chart.fc8650a4c68d070d87da.png",
     "static/media/nvspradeep.jpeg": "/portfolio/static/media/nvspradeep.2ec1572f647ba5e78810.jpeg",
     "index.html": "/portfolio/index.html",
-    "main.9785d4e0.css.map": "/portfolio/static/css/main.9785d4e0.css.map",
-    "main.1abb5095.js.map": "/portfolio/static/js/main.1abb5095.js.map"
+    "main.c6154517.css.map": "/portfolio/static/css/main.c6154517.css.map",
+    "main.8325253b.js.map": "/portfolio/static/js/main.8325253b.js.map"
   },
   "entrypoints": [
-    "static/css/main.9785d4e0.css",
-    "static/js/main.1abb5095.js"
+    "static/css/main.c6154517.css",
+    "static/js/main.8325253b.js"
   ]
 }
