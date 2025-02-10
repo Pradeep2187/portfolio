@@ -97,6 +97,12 @@ const Contact = () => {
                             <p className="success-message">Message sent successfully! ✅</p>
                         )
                     )}
+                      <br></br>
+                      <br></br>
+                      <br></br>
+                      <footer className="footer">
+                     © {new Date().getFullYear()} Venkata Sai Pradeep Nagisetti. All Rights Reserved.
+                      </footer>
 
                     {/* Social Icons */}
                     <div className="fixed-icons">

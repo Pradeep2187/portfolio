@@ -42,7 +42,7 @@
   font-size: 24px;
   cursor: pointer;
   color: white;
-  position: absolute;
+  position: fixed;
   left: 50%;
   transform: translateX(-50%);
 }

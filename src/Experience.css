@@ -49,6 +49,11 @@
   text-overflow: ellipsis; /* Adds "..." if too long */
   max-width: 90%; 
   padding-right: 10px;
+  transition: color 0.3s ease-in-out;
+}
+.experience-item .company-name :hover, .company-name.selected{
+  color:  #7febd1;
+  cursor: pointer;
 }
 
 .experience-details {

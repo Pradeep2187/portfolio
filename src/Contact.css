@@ -140,6 +140,40 @@ button:hover {
     color: #64FFDA;
 }
 
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    width: 100%;
+    position: relative;
+  }
+  
+  /* For larger screens (desktops) */
+  @media screen and (min-width: 1024px) {
+    .footer {
+      padding-top: 100px;
+      padding-left: 120px;
+    }
+  }
+  
+  /* For tablets */
+  @media screen and (max-width: 1023px) {
+    .footer {
+      padding-top: 50px;
+      padding-left: 50px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media screen and (max-width: 767px) {
+    .footer {
+      padding-top: 40px;
+      padding-left: 10px;
+      padding-right: 30px;
+    }
+  }
+  
+
 /* 🔹 RESPONSIVE DESIGN 🔹 */
 @media (max-width: 768px) {
     .contact-container {

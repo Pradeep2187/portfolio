@@ -45,7 +45,8 @@ const Experience = () => {
                           onClick={() => setSelectedCompany(index)}
                       >
                           <img src={exp.logo} alt={`${exp.company} Logo`} className="company-logo" />
-                          <div className="company-name">
+                          <div className={`company-name ${selectedCompany === index ? "selected" : ""}`}
+                          onMouseEnter={() => setSelectedCompany(index)}>
                               {selectedCompany === index && <div className="vertical-line-company"></div>} 
                               {exp.company}
                           </div>
